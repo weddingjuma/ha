@@ -1,0 +1,69 @@
+Features
+	Human Resource Management
+		- Departmental definations
+		- Job role definations
+		- Full Employee profile with automated CV Generation
+		- Job application and Evaluation
+		- Internship and Casuals Management
+		- Leave management
+	Payroll
+		- Allowances, Deductions and Taxes calculations
+		- Payslip generation
+		- Customisable payroll management
+	Project Management
+		- Project defination
+		- Phase and task defination and allocation
+		- Budget estimation
+		- Expenditure management
+
+Setup
+
+1. install Postgresql http://www.postgresql.org/ above version 8.4
+	Linux Installation
+	- yum install postgresql-server
+	- service postgresql initdb - (Optional - wull clear all databases)
+	- service postgresql start
+
+	Windows Installation
+	- Download the setup file and install
+
+	{ To make the installation easier you can set the password for user postgres durting the installation to Baraza2011 }
+	{ Remember to change it for a live deployment }
+
+2. install Java http://www.oracle.com/technetwork/java/javase/downloads/index.html version 1.6.21 and above
+
+3. Download hr.app.1.2.5.zip and unzip it on any folder
+	Edit the file ./hr.app/projects/config.xml to change the progres username {{dbusername}} and password {{dbpassword}}
+
+4. Run the IDE
+	cd ./hr.app/
+	Linux : sh ide.sh
+	Windows : double click on ide.bat in app folder
+
+5. click on Human resources
+   click Edit
+
+6. Click on New Setup -> Save {Wait as the database builds}
+	or Demo Setup -> Save {For Database Demo }
+
+7. Running the appplication
+	Linux : sh baraza.sh
+	Windows : baraza.bar
+
+8. If you want to run the web version of the system download Apache tomcat http://tomcat.apache.org/ and hr.1.2.5.war and deploy. 
+	No DB configuration will be needed. There is a README file for the .war in the war folder
+
+USER PASSWORDS
+username root
+password enter
+
+DEMO Accounts
+Applicants
+amteja@mteja.me.ke - enter
+joseph.kamau@gmail.com - enter
+
+Employees
+jdoe - enter
+jtinga - enter
+
+
